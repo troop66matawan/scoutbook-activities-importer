@@ -1,0 +1,1 @@
+# scoutbook-activities-importer
