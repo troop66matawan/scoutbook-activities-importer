@@ -41,7 +41,7 @@ exports.scoutbook_activities_importer = function (scouts, importPath) {
                 const location = activityRecord['Location/Name'];
                 const Notes = activityRecord['Notes'];
 
-                const scoutKey = bsaId + '_' + firstName + '_' + middleName + '_' + lastName;
+                const scoutKey = bsaId + '_' + firstName + '_' + lastName;
                 let scout;
                 if (scouts[scoutKey]) {
                     scout = scouts[scoutKey];
