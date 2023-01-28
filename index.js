@@ -28,9 +28,9 @@ exports.scoutbook_activities_importer = function (scouts, importPath) {
         .then(function (importedData) {
             importedData.forEach(activityRecord => {
                 const bsaId = activityRecord['BSA Member ID'];
-                const firstName = activityRecord['First Name'];
-                const middleName = activityRecord['Middle Name'];
-                const lastName = activityRecord['Last Name'];
+                const firstName = activityRecord['First Name'].trim();
+                const middleName = activityRecord['Middle Name'].trim();
+                const lastName = activityRecord['Last Name'].trim();
                 const type = activityRecord['Log Type'];
                 const date = stringToDate(activityRecord['Date']);
 
